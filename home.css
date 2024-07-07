@@ -91,7 +91,7 @@ body {
 @media (max-width: 768px) {
   .move-under-input {
     flex-direction: column;
-    bottom: -105px; /* Adjusted to move down on smaller screens */
+    bottom: -100px; /* Adjusted to move down on smaller screens */
     gap: 15px;
   }
 }
@@ -104,6 +104,18 @@ body {
   width: 80vw;
   max-width: 900px;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .move-chat-container {
+    position: absolute;
+    display: flex;
+    top: 52%;
+    left: 50%;
+    width: 80vw;
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .msg-bot {
