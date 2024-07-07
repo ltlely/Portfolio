@@ -24,95 +24,96 @@ body {
   image-rendering: pixelated;
 }
 
-.background-img1,
-.background-img2,
-.background-img3 {
+.background-img1 {
   width: 100%;
   height: 100%;
+  background-image: url("./assets/background_1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 0;
+  bottom: -100vh;
   left: 0;
   image-rendering: pixelated;
-}
-
-.background-img1 {
-  background-image: url("./assets/background_1.png");
-  animation: slideUp1 1s forwards; /* Trigger the animation once */
+  animation: slideUp 1s forwards;
 }
 
 .background-img2 {
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/background_2.png");
-  animation: slideUp2 2s forwards; /* Trigger the animation once */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -100vh;
+  left: 0;
+  image-rendering: pixelated;
+  animation: slideUp 2s forwards;
 }
 
 .background-img3 {
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/background_3.png");
-  animation: slideUp3 3s forwards; /* Trigger the animation once */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -100vh;
+  image-rendering: pixelated;
+  animation: moveToTop 3s forwards;
 }
 
 .char-img1 {
-  width: 100px; /* Final width */
-  height: 100px; /* Final height */
+  width: 100px;
+  height: 100px;
   background-image: url("./assets/char1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  bottom: 3vh; /* Final position */
+  bottom: -50vh;
   left: 50%;
-  transform: translateX(-50%);
   background-size: contain;
+  animation: fall 2s forwards;
   image-rendering: pixelated;
   cursor: pointer;
-  animation: slideToPositionChar 3s forwards; /* Trigger the animation once */
+  animation: slideTop 3s forwards;
 }
 
-@keyframes slideUp1 {
-  from {
-    bottom: -100vh;
-    left: 0;
-  }
+@keyframes slideUp {
   to {
     bottom: 0;
-    left: 0;
   }
 }
 
-@keyframes slideUp2 {
+@keyframes moveToTop {
   from {
-    bottom: -100vh;
-    left: 0;
+    bottom: 100vh;
   }
   to {
-    bottom: 0;
-    left: 0;
+    top: 10vh;
   }
 }
 
-@keyframes slideUp3 {
-  from {
-    bottom: -100vh;
-    left: 0;
-  }
-  to {
-    bottom: 0;
-    left: 0;
-  }
-}
-
-@keyframes slideToPositionChar {
+@keyframes slideTop {
   from {
     bottom: -50vh;
-    left: 50%; /* Start from the center horizontally */
-    transform: translateX(-50%);
   }
   to {
     bottom: 3vh;
-    left: 50%; /* End at the center horizontally */
-    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  @keyframes slideTop {
+    from {
+      bottom: -50vh;
+    }
+    to {
+      bottom: 5vh;
+    }
   }
 }
 
@@ -167,7 +168,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .char-img1 {
     width: 100px;
     height: 100px;
