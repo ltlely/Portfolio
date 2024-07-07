@@ -302,7 +302,7 @@ p3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(0.5vw + 0.1vh + 0.5vmin);
+    font-size: calc(0.3vw + 1vh + 0.5vmin);
     gap: 8vw;
   }
 }
