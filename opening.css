@@ -90,10 +90,10 @@ body {
 
 @keyframes moveToTop {
   from {
-    bottom: 100vh;
+    bottom: -100vh;
   }
   to {
-    top: 10vh;
+    bottom: -10vh;
   }
 }
 
