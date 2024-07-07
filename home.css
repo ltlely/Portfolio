@@ -294,7 +294,7 @@ p3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(0.5vw + 1.5vh + 1vmin);
+  font-size: calc(0.5vw + 1.5vh + 0.8vmin);
   gap: 8vw;
 }
 
@@ -303,7 +303,7 @@ p3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(0.3vw + 1vh + 0.3vmin);
+    font-size: calc(0.9vw + 1vh + 1vmin);
     gap: 8vw;
   }
 }
