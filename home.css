@@ -99,7 +99,7 @@ body {
 .move-chat-container {
   position: absolute;
   display: flex;
-  top: 60%;
+  top: 57%;
   left: 50%;
   width: 80vw;
   max-width: 900px;
