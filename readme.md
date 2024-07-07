@@ -1,10 +1,10 @@
 Host link:
-[ltlely.github.io](https://ltlely.github.io/)
+[ltlely.github.io](https://ltlely.github.io/portfolio/)
 
 Inspired by:
 https://jung.ninja/
 
-Format for HTML page can be found here: 
+Format for HTML page can be found here:
 https://www.w3schools.com/html/html_basic.asp
 
 Webpage suitable for laptop and mobile:
@@ -19,7 +19,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 https://tailwindcss.com/docs/flex-direction
 https://www.w3schools.com/html/html_forms.asp
 
-Font style and importing font: 
+Font style and importing font:
 https://www.fontspace.com/roboto-remix-font-f26577
 https://stackoverflow.com/questions/18178867/how-can-i-use-googles-roboto-font-on-a-website
 
