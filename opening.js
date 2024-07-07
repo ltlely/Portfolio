@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const clickMeText = document.getElementById("clickable-text");
 
   function handleAnimationEnd() {
-    window.location.href = "index.html";
+    window.location.href = "page.html";
   }
 
   charImg1.addEventListener("click", function () {
