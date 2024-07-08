@@ -76,7 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 10px; /* Adjusted based on your requirement */
+  bottom: -50px; /* Adjusted based on your requirement */
   left: 50%;
   transform: translateX(-50%);
   font-size: calc(16px + (3 * ((100vw - 320px) / 680)));
@@ -99,7 +99,7 @@ body {
 .move-chat-container {
   position: absolute;
   display: flex;
-  top: 57%;
+  top: 66%;
   left: 50%;
   width: 80vw;
   max-width: 900px;
@@ -352,7 +352,7 @@ p3 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: 59%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
