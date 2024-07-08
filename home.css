@@ -91,7 +91,7 @@ body {
 @media (max-width: 768px) {
   .move-under-input {
     flex-direction: column;
-    bottom: -140px; /* Adjusted to move down on smaller screens */
+    bottom: -155px; /* Adjusted to move down on smaller screens */
     gap: 15px;
   }
 }
