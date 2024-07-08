@@ -91,7 +91,7 @@ body {
 @media (max-width: 768px) {
   .move-under-input {
     flex-direction: column;
-    bottom: -100px; /* Adjusted to move down on smaller screens */
+    bottom: -120px; /* Adjusted to move down on smaller screens */
     gap: 15px;
   }
 }
@@ -113,6 +113,7 @@ body {
     top: 52%;
     left: 50%;
     width: 80vw;
+    margin: 30px;
     max-width: 900px;
     transform: translate(-50%, -50%);
   }
