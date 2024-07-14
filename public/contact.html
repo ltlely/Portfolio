@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="home.css">
+  <img id="background" src="./assets/background_0.png">
+</head>
+<body>
+  <div class="move-table">
+    <div class="table-contents">
+      <div class="move-contents">
+        <a href="./home.html">Homepage</a>
+        <a href="./resume.html">Resume</a>
+        <a href="https://www.linkedin.com/in/lylytran/">LinkedIn</a>
+        <a href="https://github.com/ltlely">Github</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="move-container">
+    <div class="container">
+      <h1>Let's get in touch</h1>
+      <form id="contact_form" name="contact_form" method="post" action="/send-email">
+        <div class="mb-5 row">
+          <div class="col">
+            <label>First Name</label>
+            <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
+          </div>
+          <div class="col">
+            <label>Last Name</label>
+            <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+          </div>
+        </div>
+        <div class="mb-5 row">
+          <div class="col">
+            <label for="email_addr">Email address</label>
+            <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email" placeholder="name@example.com">
+          </div>
+          <div class="col">
+            <label for="phone_input">Phone</label>
+            <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="phone" placeholder="Phone">
+          </div>
+        </div>
+        <div class="mb-5">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn btn-primary px-4 btn-lg">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
