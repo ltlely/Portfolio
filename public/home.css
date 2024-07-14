@@ -42,16 +42,16 @@ body {
 }
 
 .transparent-box::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
+  width: 12px;
   border-radius: 10px;
 }
 
 .transparent-box::-webkit-scrollbar-track {
-  background: transparent; /* Color of the track */
+  background: transparent;
 }
 
 .transparent-box::-webkit-scrollbar-thumb {
-  background: #20446b; /* Color of the track */
+  background: #20446b; 
   border-radius: 20px;
 }
 
@@ -76,7 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -50px; /* Adjusted based on your requirement */
+  bottom: -50px; 
   left: 50%;
   transform: translateX(-50%);
   font-size: calc(16px + (3 * ((100vw - 320px) / 680)));
@@ -84,14 +84,13 @@ body {
   flex-direction: row;
   width: auto;
   max-width: 90%;
-  margin-bottom: -100px; /* This might not be necessary with position absolute */
 }
 
-/* Media query for screens less than 768px */
+
 @media (max-width: 768px) {
   .move-under-input {
     flex-direction: column;
-    bottom: -155px; /* Adjusted to move down on smaller screens */
+    bottom: -155px; 
     gap: 15px;
   }
 }
@@ -113,9 +112,10 @@ body {
     top: 52%;
     left: 42.5%;
     width: 80vw;
-    margin: 30px;
+    margin: 32px;
     max-width: 900px;
     transform: translate(-50%, -50%);
+
   }
 }
 
@@ -240,12 +240,10 @@ p3 {
 }
 
 #workExperience {
-  /* margin-left: 700px; */
   font-family: "minecraft1", sans-serif;
 }
 
 #personalProject {
-  /* margin-left: 770px; */
   font-family: "minecraft1", sans-serif;
 }
 
@@ -376,7 +374,7 @@ p3 {
     width: 900px;
     box-shadow: 10px 10px 10px #4e89c6;
     opacity: 0.8;
-    height: 500px;
+    height: 510px;
   }
 }
 
@@ -421,6 +419,17 @@ p3 {
   display: flex;
   flex-direction: column;
   align-items: center; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+    padding: 20px;
+    margin-top: 0vh; 
+  }
 }
 
 .mb-5 {
