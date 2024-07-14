@@ -76,7 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -50px; 
+  bottom: -130px; 
   left: 50%;
   transform: translateX(-50%);
   font-size: calc(16px + (3 * ((100vw - 320px) / 680)));
