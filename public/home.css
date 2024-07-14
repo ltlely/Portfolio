@@ -363,7 +363,7 @@ p3 {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
@@ -375,7 +375,7 @@ p3 {
     width: 900px;
     box-shadow: 10px 10px 10px #4e89c6;
     opacity: 0.8;
-    height: 510px;
+    height: 540px;
   }
 }
 
