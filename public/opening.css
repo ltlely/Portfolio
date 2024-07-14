@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "minecraft1";
+  src: url("./fonts/minecraft1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/background_0.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.background-img1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/background_1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -100vh;
+  left: 0;
+  image-rendering: pixelated;
+  animation: slideUp 1s forwards;
+}
+
+.background-img2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/background_2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -100vh;
+  left: 0;
+  image-rendering: pixelated;
+  animation: slideUp 2s forwards;
+}
+
+.background-img3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/background_3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -100vh;
+  image-rendering: pixelated;
+  animation: moveToTop 3s forwards;
+}
+
+.char-img1 {
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/char1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -50vh;
+  left: 50%;
+  background-size: contain;
+  animation: fall 2s forwards;
+  image-rendering: pixelated;
+  cursor: pointer;
+  animation: slideTop 3s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes moveToTop {
+  from {
+    bottom: -100vh;
+  }
+  to {
+    bottom: -10vh;
+  }
+}
+
+@keyframes slideTop {
+  from {
+    bottom: -50vh;
+  }
+  to {
+    bottom: 3vh;
+  }
+}
+
+@media (max-width: 600px) {
+  @keyframes slideTop {
+    from {
+      bottom: -50vh;
+    }
+    to {
+      bottom: 5vh;
+    }
+  }
+}
+
+.moon-img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-image: url("./assets/moon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -100px;
+  image-rendering: pixelated;
+  animation: moveToLeftCorner 2s forwards;
+}
+
+@keyframes moveToLeftCorner {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 0;
+    top: 0;
+  }
+}
+
+.clickable-text {
+  position: absolute;
+  bottom: -50px;
+  left: 53%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  z-index: 10;
+  animation: moveTextUp 4s forwards;
+}
+
+.clickable-text {
+  font-family: "minecraft1", sans-serif;
+}
+
+/* Keyframes for moving text from bottom to top */
+@keyframes moveTextUp {
+  0% {
+    bottom: -50px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 110px;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .char-img1 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .clickable-text {
+    font-size: 24px;
+    animation: moveTextUpMobile 4s forwards;
+    left: 62%;
+  }
+
+  @keyframes moveTextUpMobile {
+    0% {
+      bottom: -50px;
+      opacity: 0;
+    }
+    100% {
+      bottom: 118px;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes moveDown {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100vh;
+  }
+}
+
+@keyframes moveDownChar {
+  from {
+    bottom: 3vh;
+  }
+  to {
+    bottom: -100vh;
+  }
+}
+
+.move-down1 {
+  animation: moveDown 1s forwards;
+}
+.move-down2 {
+  animation: moveDown 2s forwards;
+}
+.move-down3 {
+  animation: moveDown 3s forwards;
+}
+.move-down4 {
+  animation: moveDownChar 3s forwards;
+}
+
+.move-down5 {
+  animation: moveDownChar 3s forwards;
+}
+
+@keyframes moveOutLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100vw; /* Move to the left out of view */
+  }
+}
+
+.move-out-left {
+  animation: moveOutLeft 2s forwards;
+}
