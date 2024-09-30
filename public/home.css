@@ -51,7 +51,7 @@ body {
 }
 
 .transparent-box::-webkit-scrollbar-thumb {
-  background: #20446b;
+  background: #20446b; 
   border-radius: 20px;
 }
 
@@ -76,7 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -150px;
+  bottom: -150px; 
   left: 50%;
   transform: translateX(-50%);
   font-size: calc(16px + (3 * ((100vw - 320px) / 680)));
@@ -86,10 +86,11 @@ body {
   max-width: 90%;
 }
 
+
 @media (max-width: 768px) {
   .move-under-input {
     flex-direction: column;
-    bottom: -250px;
+    bottom: -250px; 
     gap: 15px;
   }
 }
@@ -114,6 +115,7 @@ body {
     margin: 32px;
     max-width: 900px;
     transform: translate(-50%, -50%);
+
   }
 }
 
@@ -223,6 +225,47 @@ button:hover {
   color: #4e89c6;
 }
 
+p1 {
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  height: 23px;
+  width: auto;
+  background-color: transparent;
+  font-size: 27px;
+}
+p3 {
+  padding: 5px;
+}
+
+#workExperience {
+  font-family: "minecraft1", sans-serif;
+}
+
+#personalProject {
+  font-family: "minecraft1", sans-serif;
+}
+
+#funFacts {
+  font-family: "minecraft1", sans-serif;
+}
+
+#workBtn {
+  font-family: "minecraft1", sans-serif;
+  font-size: 19px;
+}
+
+#personal-project {
+  font-family: "minecraft1", sans-serif;
+  font-size: 19px;
+}
+
+#fun-facts {
+  font-family: "minecraft1", sans-serif;
+  font-size: 19px;
+}
+
 .move-table {
   display: flex;
   justify-content: center;
@@ -298,26 +341,28 @@ button:hover {
     top: 70px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 100%; 
     max-width: 100%;
     overflow: hidden;
   }
 }
+
+
 
 .container {
   background-color: white;
   padding: 40px;
   border: none;
   border-radius: 20px;
-  width: 800px;
+  width: 800px; 
   max-width: 100%;
   box-shadow: 10px 10px 10px #4e89c6;
   opacity: 0.8;
   height: 620px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   margin-top: 50px;
 }
 
@@ -334,13 +379,14 @@ button:hover {
   }
 }
 
+
 .move-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; 
   padding: 20px;
-  margin-top: -10vh;
+  margin-top: -10vh; 
 }
 
 @media (max-width: 768px) {
@@ -348,9 +394,9 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; 
     padding: 20px;
-    margin-top: -18vh;
+    margin-top: -18vh; 
   }
 }
 
@@ -373,7 +419,7 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
 }
 
 @media (max-width: 768px) {
@@ -381,9 +427,9 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 70vh; 
     padding: 20px;
-    margin-top: 0vh;
+    margin-top: 0vh; 
   }
 }
 
@@ -407,10 +453,10 @@ button:hover {
 
 .form-footer {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   width: 100%;
   max-width: 300px;
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 .resume-container {
@@ -455,26 +501,17 @@ h2 {
   padding-bottom: 5px;
 }
 
-.institution,
-.job,
-.project,
-.activity {
+.institution, .job, .project, .activity {
   margin-bottom: 10px;
 }
 
-.institution h3,
-.job h3,
-.project h3,
-.activity h3 {
+.institution h3, .job h3, .project h3, .activity h3 {
   margin: 0;
   font-size: 18px;
   color: #333;
 }
 
-.institution p,
-.job p,
-.project p,
-.activity p {
+.institution p, .job p, .project p, .activity p {
   margin: 2px 0;
   font-size: 14px;
 }
